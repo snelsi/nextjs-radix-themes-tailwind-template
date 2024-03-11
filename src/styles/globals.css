@@ -1,0 +1,24 @@
+/* Use pointer cursor for interactive elements */
+.radix-themes {
+  --cursor-button: pointer;
+  --cursor-disabled: default;
+  --cursor-link: pointer;
+  --cursor-menu-item: pointer;
+  --cursor-slider-thumb: pointer;
+  --cursor-slider-thumb-active: pointer;
+  --cursor-switch: pointer;
+}
+
+/* Add minimalistic transition to interactive elements */
+.rt-BaseButton,
+.rt-TabsTrigger,
+.rt-Link,
+.rt-TextFieldInput,
+.rt-CheckboxButton,
+.rt-BaseMenuItem {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

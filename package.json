@@ -1,0 +1,45 @@
+{
+  "name": "nextjs-radix-themes-template",
+  "description": "Minimalistic Next.js + Radix Themes template to bootstrap your next project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --fix",
+    "prettier": "prettier --write .",
+    "fix": "npm run prettier && npm run lint",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "npm run fix"
+  },
+  "dependencies": {
+    "@radix-ui/themes": "3.0.0-rc.15",
+    "lucide-react": "^0.354.0",
+    "next": "^14.1.3",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.3",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.2"
+  },
+  "engines": {
+    "node": "^20.0.0",
+    "pnpm": "^8.0.0"
+  }
+}

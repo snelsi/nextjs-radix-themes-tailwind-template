@@ -1,0 +1,92 @@
+/* Use a more-intuitive box-sizing model, Remove default margin and padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Allow percentage-based heights in the application */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* Add accessible line-height */
+/* Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Prevent horizontal overflow */
+html,
+body {
+  max-width: 100vw;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove fieldset borders */
+fieldset {
+  border: none;
+}
+
+/* Reset link styles */
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Reset button styles */
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Hide list markers */
+ul,
+ol,
+li {
+  list-style: none;
+}
