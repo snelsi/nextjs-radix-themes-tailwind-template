@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Use pointer cursor for interactive elements */
 .radix-themes {
   --cursor-button: pointer;

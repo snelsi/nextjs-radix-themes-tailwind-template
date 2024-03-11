@@ -8,7 +8,7 @@ import "@/styles/reset.css";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Next.js + Radix Themes",
+  title: "Next.js + Radix Themes + Tailwind CSS",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
