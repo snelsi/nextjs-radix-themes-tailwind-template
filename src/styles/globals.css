@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Use pointer cursor for interactive elements */
 .radix-themes {
+  /* Use pointer cursor for interactive elements */
   --cursor-button: pointer;
   --cursor-disabled: default;
   --cursor-link: pointer;
@@ -11,6 +11,9 @@
   --cursor-slider-thumb: pointer;
   --cursor-slider-thumb-active: pointer;
   --cursor-switch: pointer;
+
+  /* Use Inter as the default font family */
+  --default-font-family: var(--font-inter);
 }
 
 /* Add minimalistic transition to interactive elements */
