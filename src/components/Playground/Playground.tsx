@@ -94,7 +94,8 @@ import {
   TextFieldSlot,
   Text,
   Tooltip,
-  ThemePanel,
+  Container,
+  Section,
 } from "@radix-ui/themes";
 import {
   accentColors,
@@ -140,12 +141,8 @@ import { getPeopleForColor } from "./people";
 import styles from "./styles.module.css";
 
 export const Playground = () => (
-  <>
-    <Box display={{ initial: "none", xs: "block" }}>
-      <ThemePanel />
-    </Box>
-
-    <Box m={{ initial: "3", md: "6", xl: "9" }}>
+  <Section>
+    <Container>
       <Heading id="alert-dialog" mb="5">
         <Link color="gray" underline="hover" highContrast href="#alert-dialog">
           Alert Dialog
@@ -4742,8 +4739,8 @@ export const Playground = () => (
           </Flex>
         </Tooltip>
       </Flex>
-    </Box>
-  </>
+    </Container>
+  </Section>
 );
 
 function AvatarIconFallback() {
