@@ -30,6 +30,11 @@
   transition-duration: 150ms;
 }
 
+/* Makes containers to have a proper inline padding on all screens */
+.rt-ContainerInner {
+  width: 92%;
+}
+
 /* Enable smooth scrolling */
 html {
   scroll-behavior: smooth;
