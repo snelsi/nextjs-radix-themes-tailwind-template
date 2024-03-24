@@ -5,9 +5,11 @@
 .radix-themes {
   /* Use pointer cursor for interactive elements */
   --cursor-button: pointer;
+  --cursor-checkbox: pointer;
   --cursor-disabled: default;
   --cursor-link: pointer;
   --cursor-menu-item: pointer;
+  --cursor-radio: pointer;
   --cursor-slider-thumb: pointer;
   --cursor-slider-thumb-active: pointer;
   --cursor-switch: pointer;
